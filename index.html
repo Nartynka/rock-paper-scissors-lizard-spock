@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock, Paper, Scissors, Lizard, Spock</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
+  <!-- Score
   Rules
 
   You Picked
@@ -17,21 +18,49 @@
   You Win
   You Lose
 
-  Play Again
+  Play Again -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Martyna</a>.
+  <div class="container">
+    <div class="scorebord">
+      <div class="scoreboard__title"><img src="images/logo-bonus.svg" alt="Rock, paper, scissors, lizard, spock"></div>
+      <div class="scoreboard__box">
+        <p class="box__title">SCORE</p>
+        <p class="box__score">12</p>
+      </div>
+    </div>
+    <div class="borad">
+      <img src="images/bg-pentagon.svg" alt="background-pentagon">
+      <button title="rock" class="btn btn1"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
+      <button title="paper" class="btn btn2"><img src="images/icon-paper.svg" alt="paper" class="img"></button>
+      <button title="scissors" class="btn btn3"><img src="images/icon-scissors.svg" alt="scissors" class="img"></button>
+      <button title="lizard" class="btn btn2"><img src="images/icon-lizard.svg" alt="lizard" class="img"></button>
+      <button title="spock" class="btn btn2"><img src="images/icon-spock.svg" alt="spock" class="img"></button>
+    </div>
+    <div class="result">
+      <div class="move-box">
+        <p>YOU PICKED</p>
+        <div class="move-box__img img-box">
+          <img src="images/icon-rock.svg" alt="rock" class="img" title="rock">
+        </div>
+      </div>
+      <p>COMPUTER PICKED</p>
+      <div class="move-box img-box">
+        <div class="move-box__img">
+          <img src="images/icon-rock.svg" alt="rock" class="img" title="rock">
+        </div>
+      </div>
+    </div>
   </div>
+
+  <button class="rules">RULES</button>
+
+  <footer class="footer">
+    Coded by <a href="#">Martyna</a>.
+  </footer>
+  <script src="app.js"></script>
 </body>
+
 </html>
