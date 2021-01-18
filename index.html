@@ -27,39 +27,83 @@
     <div class="scorebord">
       <div class="scoreboard__title"><img src="images/logo-bonus.svg" alt="Rock, paper, scissors, lizard, spock"></div>
       <div class="scoreboard__box">
-        <p class="box__title">SCORE</p>
-        <p class="box__score">12</p>
+        <p class="scoreboard__title">SCORE</p>
+        <p class="scoreboard__score">12</p>
       </div>
     </div>
-    <div class="borad">
-      <img src="images/bg-pentagon.svg" alt="background-pentagon">
-      <button title="rock" class="btn btn1"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
-      <button title="paper" class="btn btn2"><img src="images/icon-paper.svg" alt="paper" class="img"></button>
-      <button title="scissors" class="btn btn3"><img src="images/icon-scissors.svg" alt="scissors" class="img"></button>
-      <button title="lizard" class="btn btn2"><img src="images/icon-lizard.svg" alt="lizard" class="img"></button>
-      <button title="spock" class="btn btn2"><img src="images/icon-spock.svg" alt="spock" class="img"></button>
+    <div class="board">
+      <img class="board__hexagon" src="images/bg-pentagon.svg" alt="background-pentagon">
+
+      <div class="board__gradient-box gradient-box-1 board__gradient-box--scissors">
+        <button title="scissors" class="board__btn btn3"><img src="images/icon-scissors.svg" alt="scissors" class="img"></button>
+      </div>
+
+      <div class="board__gradient-box gradient-box-2 board__gradient-box--paper">
+        <button title="paper" class="board__btn btn2"><img src="images/icon-paper.svg" alt="paper" class="img"></button>
+      </div>
+
+      <div class="board__gradient-box gradient-box-3 board__gradient-box--rock">
+        <button title="rock" class="board__btn btn1"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
+      </div>
+
+      <div class="board__gradient-box gradient-box-4 board__gradient-box--lizard">
+        <button title="lizard" class="board__btn btn4"><img src="images/icon-lizard.svg" alt="lizard" class="img"></button>
+      </div>
+
+      <div class="board__gradient-box gradient-box-5 board__gradient-box--spock">
+        <button title="spock" class="board__btn btn5"><img src="images/icon-spock.svg" alt="spock" class="img"></button>
+      </div>
     </div>
+
+
+
+
     <div class="result">
-      <div class="move-box">
-        <p>YOU PICKED</p>
-        <div class="move-box__img img-box">
-          <img src="images/icon-rock.svg" alt="rock" class="img" title="rock">
-        </div>
+      <p class="result__text">YOU PICKED</p>
+
+      <div class="result__gradient-box gradient-box-3">
+        <button title="rock" class="result__move"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
       </div>
-      <p>COMPUTER PICKED</p>
-      <div class="move-box img-box">
-        <div class="move-box__img">
-          <img src="images/icon-rock.svg" alt="rock" class="img" title="rock">
-        </div>
+    </div>
+
+
+    
+    <div class="result">
+      <p class="result__text">COMPUTER PICKED</p>
+
+      <div class="result__gradient-box gradient-box-3">
+        <button title="rock" class="result__move"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
       </div>
     </div>
   </div>
 
-  <button class="rules">RULES</button>
 
-  <footer class="footer">
+
+
+
+
+  <button class="rules">RULES</button>
+  <div class="rules-popup">
+    <div class="rules-popup__header">
+      <p class="rules-popup__text">RULES</p>
+      <img src="images/icon-close.svg" alt="close" class="rules-popup__close-btn">
+    </div>
+
+    <img class="rules-popup__rules-img" src="images/image-rules-bonus.svg" alt="Scissors cuts Paper,
+  Paper covers Rock,
+  Rock crushes Lizard,
+  Lizard poisons Spock,
+  Spock smashes Scissors,
+  Scissors decapitates Lizard,
+  Lizard eats Paper,
+  Paper disproves Spock,
+  Spock vaporizes Rock,
+  Rock crushes Scissors">
+  </div>
+
+  <!-- <footer class="footer">
     Coded by <a href="#">Martyna</a>.
-  </footer>
+  </footer> -->
   <script src="app.js"></script>
 </body>
 
