@@ -59,21 +59,32 @@
 
 
     <div class="result">
-      <p class="result__text">YOU PICKED</p>
 
-      <div class="result__gradient-box gradient-box-3">
-        <button title="rock" class="result__move"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
+      <div class="result__flex-container">
+        <p class="result__text">YOU PICKED</p>
+        <span class="winner-animation--disable">
+          <div class="result__gradient-box gradient-box-1">
+            <button title="scissors" class="result__move"><img src="images/icon-scissors.svg" alt="scissors" class="result__img"></button>
+          </div>
+        </span>
       </div>
-    </div>
 
 
-    
-    <div class="result">
-      <p class="result__text">COMPUTER PICKED</p>
-
-      <div class="result__gradient-box gradient-box-3">
-        <button title="rock" class="result__move"><img src="images/icon-rock.svg" alt="rock" class="img"></button>
+      <div class="result__animated-box">
+        <p class="animated-box__text">YOU LOSE</p>
+        <button class="animated-box__btn">PLAY AGAIN</button>
       </div>
+
+
+      <div class="result__flex-container">
+        <p class="result__text">COMPUTER PICKED</p>
+        <span class="winner-animation--disable">
+          <div class="result__gradient-box gradient-box-5">
+            <button title="spock" class="result__move"><img src="images/icon-spock.svg" alt="spock" class="result__img"></button>
+          </div>
+        </span>
+      </div>
+
     </div>
   </div>
 
