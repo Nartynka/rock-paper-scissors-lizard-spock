@@ -62,7 +62,7 @@
 
       <div class="result__flex-container">
         <p class="result__text">YOU PICKED</p>
-        <span class="winner-animation--disable">
+        <span class="winner-animation winner-animation">
           <div class="result__gradient-box gradient-box-1">
             <button title="scissors" class="result__move"><img src="images/icon-scissors.svg" alt="scissors" class="result__img"></button>
           </div>
@@ -78,7 +78,7 @@
 
       <div class="result__flex-container">
         <p class="result__text">COMPUTER PICKED</p>
-        <span class="winner-animation--disable">
+        <span class="winner-animation winner-animation--visab">
           <div class="result__gradient-box gradient-box-5">
             <button title="spock" class="result__move"><img src="images/icon-spock.svg" alt="spock" class="result__img"></button>
           </div>
@@ -97,7 +97,10 @@
   <div class="rules-popup">
     <div class="rules-popup__header">
       <p class="rules-popup__text">RULES</p>
-      <img src="images/icon-close.svg" alt="close" class="rules-popup__close-btn">
+      <!-- <img src="images/icon-close-hover.svg" alt="close" class="rules-popup__close-btn"> -->
+      <span class="rules-popup__close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path class="rules-popup__close-btn-svg" fill="#3B4262" fill-rule="evenodd" d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" opacity=".25"/></svg>
+      </span>
     </div>
 
     <img class="rules-popup__rules-img" src="images/image-rules-bonus.svg" alt="Scissors cuts Paper,
